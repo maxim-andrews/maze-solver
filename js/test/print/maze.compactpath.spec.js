@@ -1,0 +1,40 @@
+describe('Maze compactPath', function() {
+
+  var maze;
+
+  beforeEach(function() {
+    maze = new Maze({
+      maze: '7 5\n1110001\n0010001\n1111111\n0000101\n1111101',
+      start: [
+        { x: 6, y: 0, label: 'A' },
+        { x: 0, y: 4, label: 'B' },
+        { x: 6, y: 4, label: 'C' }
+      ],
+      end: [ { x: 0, y: 0, label: 'X' } ]
+    });
+  });
+
+  it('Should call method `compactPortion` eight times.', function() {
+    var path = [ 'x', 'a', 'a', 'a', 'd', 'd', 'c' ];
+
+    spyOn(maze, 'compactPortion').and.callThrough();
+    expect(maze.compactPath(path) === '3a2dc').toBeTruthy();
+    expect(maze.compactPortion).toHaveBeenCalledTimes(8);
+  });
+
+  it('Should call method `compactPortion` two times.', function() {
+    var path = [ 'x' ];
+
+    spyOn(maze, 'compactPortion').and.callThrough();
+    expect(maze.compactPath(path) === '').toBeTruthy();
+    expect(maze.compactPortion).toHaveBeenCalledTimes(2);
+  });
+
+  it('Should call method `compactPortion` one times.', function() {
+    var path = [];
+
+    spyOn(maze, 'compactPortion').and.callThrough();
+    expect(maze.compactPath(path) === '').toBeTruthy();
+    expect(maze.compactPortion).toHaveBeenCalledTimes(1);
+  });
+});
