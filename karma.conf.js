@@ -3,7 +3,6 @@
 
 module.exports = function(config) {
   config.set({
-
     basePath: '',
     frameworks: ['jasmine'],
     files: [
@@ -17,7 +16,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['PhantomJS'],
-    singleRun: false,
+    singleRun: process.env.CI ? true : false,
     concurrency: Infinity
-});
+  });
 };
