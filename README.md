@@ -63,10 +63,11 @@ to reach the goal. Where `U` denotes step up, `L` is one step left, `R` and `D` 
 The result will be produced in compact way where number denotes the number of steps in the current direction, like this:
 
 ```
-from A: 2D4L2U2L
-from B: 4R2U2L2U2L
-from C: 2U4L2U2L
+[ '4L6D4L4D4L2D8L2U4R4U4L4U8L2U2L',
+  '4U4L4U2L8D6L4U2R2U2L4U2R2U8L2D2L8U4R4U4L4U8L2U2L',
+  '12U2R2D2R2D2R2U4R8U4R4U4L4U8L2U2L' ]
 ```
+The result is an array sorted by the starting point label name.
 
 **Maze string** should contain width and height of the maze in first line.
 The maze itself will follow, with 1 depicting passages and 0 for impassable walls.
