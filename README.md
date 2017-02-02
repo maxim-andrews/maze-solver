@@ -14,7 +14,9 @@ Maze is given as a rectangular matrix of `0` and `1` characters.
 1111101
 ```
 
-You have to provide to maze solver Entry and Exit points and it will find
+**Maze string** should contain width and height of the maze in first line.
+The maze itself will follow, with 1 depicting passages and 0 for impassable
+walls. You have to provide to maze solver Entry and Exit points and it will find
 the shortest path for you. See code below for configuration example:
 
 ```
@@ -68,6 +70,3 @@ The result will be produced in compact way where number denotes the number of st
   '12U2R2D2R2D2R2U4R8U4R4U4L4U8L2U2L' ]
 ```
 The result is an array sorted by the starting point label name.
-
-**Maze string** should contain width and height of the maze in first line.
-The maze itself will follow, with 1 depicting passages and 0 for impassable walls.
