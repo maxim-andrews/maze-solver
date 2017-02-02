@@ -1,4 +1,4 @@
-# Decision tree implementation
+# Decision tree implementation [![Build Status](https://travis-ci.org/maximandrewz/maze-solver.svg?branch=master)](https://travis-ci.org/maximandrewz/maze-solver)
 
 ## Maze Solver
 
