@@ -6,13 +6,30 @@
   "scripts": {
     "test": "karma start"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximandrewz/maze-solver.git"
+  },
+  "keywords": [
+    "maze",
+    "solver",
+    "decision tree"
+  ],
+  "author": "Maxim Andrews (www.maximandrews.com)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maximandrewz/maze-solver/issues"
+  },
+  "homepage": "https://github.com/maximandrewz/maze-solver#readme",
   "devDependencies": {
     "jasmine-core": "^2.4.1",
     "karma": "^1.1.1",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.1",
     "phantomjs-prebuilt": "^2.1.7"
+  },
+  "engines": {
+    "node": ">=6.1.0",
+    "npm": ">=4.0.0"
   }
 }
